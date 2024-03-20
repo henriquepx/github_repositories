@@ -1,0 +1,31 @@
+@import '../styles/abstract/variables';
+
+.CardContainer {
+    background-color: rgb(29, 29, 29);
+    padding: 1rem;
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .logoname {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: .7rem;
+    }
+    p {
+        max-width: 30ch;
+        color: #fff;
+    }
+    .reponame {
+        font-size: 1.2rem;
+        color: #fff;
+    }
+    .linkrepositorio {
+        margin-top: 1rem;
+        font-size: .8rem;
+        color: #dadada;
+        font-style: italic;
+    }
+}
