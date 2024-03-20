@@ -14,6 +14,9 @@
     display: flex;
     align-items: center;
     gap: 30px;
+    @media (max-width: 700px) {
+      gap: 15px;
+    }
     img {
         width: 50px;
     }
@@ -35,10 +38,10 @@
 }
 
 .ReposGithub {
-  padding-top: 2rem;
+  padding: 2rem;
   overflow-y: auto;
-    &::-webkit-scrollbar {
-      width: 12px; 
+  &::-webkit-scrollbar {
+    width: 12px; 
   }
   &::-webkit-scrollbar-thumb {
       background-color: #505050; 
@@ -48,12 +51,13 @@
       background-color: #1d1d1d;
   }
   scrollbar-width: thin;
-  scrollbar-color: #9c9c9c;
+  scrollbar-color: #9c9c9c #1d1d1d;
     ul {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       gap: 20px;
+      padding-bottom: 2rem;
         li {
             color: #fff;
         }

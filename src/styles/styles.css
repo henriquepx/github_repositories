@@ -28,6 +28,11 @@
   align-items: center;
   gap: 30px;
 }
+@media (max-width: 700px) {
+  .GithubIntro {
+    gap: 15px;
+  }
+}
 .GithubIntro img {
   width: 50px;
 }
@@ -48,10 +53,10 @@
 }
 
 .ReposGithub {
-  padding-top: 2rem;
+  padding: 2rem;
   overflow-y: auto;
   scrollbar-width: thin;
-  scrollbar-color: #9c9c9c;
+  scrollbar-color: #9c9c9c #1d1d1d;
 }
 .ReposGithub::-webkit-scrollbar {
   width: 12px;
@@ -68,6 +73,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
+  padding-bottom: 2rem;
 }
 .ReposGithub ul li {
   color: #fff;
